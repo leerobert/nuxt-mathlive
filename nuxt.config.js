@@ -8,9 +8,9 @@ export default {
     // Doc: https://github.com/nuxt-community/eslint-module
     '@nuxtjs/eslint-module'
   ],
-  modules: [
-  ],
+  modules: [],
   build: {
+    modules: ['mathlive'],
     /*
     ** You can extend webpack config here
     */
