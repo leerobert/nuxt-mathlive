@@ -6,7 +6,7 @@
         id="mf"
         ref="mathfield"
         v-model="formula"
-        :config="{smartFence:false}"
+        :config="{smartFence:false, fontsDirectory:'https://unpkg.com/mathlive/dist/fonts'}"
         :on-keystroke="displayKeystroke"
         @focus="ping"
       >
