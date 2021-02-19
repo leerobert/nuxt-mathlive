@@ -1,18 +1,14 @@
 export default {
-  mode: "universal",
-  plugins: [{ src: "~/plugins/mathlive.js", ssr: false }],
-  buildModules: [
-    // Doc: https://github.com/nuxt-community/eslint-module
-    "@nuxtjs/eslint-module",
-  ],
+  plugins: [{ src: '~/plugins/mathlive.client.js' }],
+  buildModules: [],
   modules: [],
   build: {
-    modules: ["mathlive"],
+    modules: ['mathlive'],
     /*
      ** You can extend webpack config here
      */
     extend(config, ctx) {
-      config.resolve.alias["vue"] = "vue/dist/vue.common";
-    },
-  },
-};
+      config.resolve.alias.vue = 'vue/dist/vue.common'
+    }
+  }
+}
